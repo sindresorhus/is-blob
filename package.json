@@ -34,7 +34,7 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "jsdom": "^7.0.1",
+    "jsdom": "^8.3.0",
     "pify": "^2.2.0",
     "xo": "*"
   }

@@ -24,4 +24,4 @@ isBlob(new Blob(['<h1>Unicorns</h1>'], {type: 'text/html'}));
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

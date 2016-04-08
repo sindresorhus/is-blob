@@ -1,11 +1,11 @@
 import test from 'ava';
 import jsdom from 'jsdom';
 import pify from 'pify';
-import fn from './';
+import m from './';
 
 test(async t => {
 	const Blob = (await pify(jsdom.env)('')).Blob;
 	global.Blob = Blob;
-	t.true(fn(new Blob()));
-	t.false(fn(new Buffer(1)));
+	t.true(m(new Blob()));
+	t.false(m(new Buffer(1)));
 });

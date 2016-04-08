@@ -1,5 +1,5 @@
-/* globals Blob */
 'use strict';
+/* globals Blob */
 var toString = Object.prototype.toString;
 
 module.exports = function (x) {
