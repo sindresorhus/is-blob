@@ -1,7 +1,4 @@
 'use strict';
-/* globals Blob */
-var toString = Object.prototype.toString;
+const toString = Object.prototype.toString;
 
-module.exports = function (x) {
-	return x instanceof Blob || toString.call(x) === '[object Blob]';
-};
+module.exports = input => input instanceof Blob || toString.call(input) === '[object Blob]';

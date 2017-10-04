@@ -1,46 +1,46 @@
 {
-  "name": "is-blob",
-  "version": "1.0.0",
-  "description": "Check if a value is a Blob",
-  "license": "MIT",
-  "repository": "sindresorhus/is-blob",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "blob",
-    "object",
-    "obj",
-    "file",
-    "raw",
-    "data",
-    "immutable",
-    "browser",
-    "check",
-    "detect",
-    "is",
-    "type"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "jsdom": "^11.3.0",
-    "xo": "*"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "browser"
-    ]
-  }
+	"name": "is-blob",
+	"version": "1.0.0",
+	"description": "Check if a value is a Blob",
+	"license": "MIT",
+	"repository": "sindresorhus/is-blob",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"blob",
+		"object",
+		"obj",
+		"file",
+		"raw",
+		"data",
+		"immutable",
+		"browser",
+		"check",
+		"detect",
+		"is",
+		"type"
+	],
+	"devDependencies": {
+		"ava": "*",
+		"jsdom": "^11.3.0",
+		"xo": "*"
+	},
+	"xo": {
+		"envs": [
+			"node",
+			"browser"
+		]
+	}
 }

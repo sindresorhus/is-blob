@@ -2,13 +2,13 @@
 
 > Check if a value is a [Blob](https://developer.mozilla.org/en/docs/Web/API/Blob) - File-like object of immutable, raw data
 
-*Blob is only available in the browser.*
+*`Blob` is only available in the browser.*
 
 
 ## Install
 
 ```
-$ npm install --save is-blob
+$ npm install is-blob
 ```
 
 
