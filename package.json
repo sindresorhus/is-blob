@@ -34,8 +34,13 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "jsdom": "^8.3.0",
-    "pify": "^2.2.0",
+    "jsdom": "^11.3.0",
     "xo": "*"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ]
   }
 }
