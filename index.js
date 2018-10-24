@@ -1,4 +1,9 @@
 'use strict';
-const toString = Object.prototype.toString;
 
-module.exports = input => input instanceof Blob || toString.call(input) === '[object Blob]';
+module.exports = input => {
+	if (!Blob) {
+		return false;
+	}
+
+	return input instanceof Blob || Object.prototype.toString.call(input) === '[object Blob]';
+};
