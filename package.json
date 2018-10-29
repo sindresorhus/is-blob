@@ -1,6 +1,6 @@
 {
 	"name": "is-blob",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Check if a value is a Blob",
 	"license": "MIT",
 	"repository": "sindresorhus/is-blob",
