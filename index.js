@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = input => {
-	if (!Blob) {
+	if (typeof Blob === 'undefined') {
 		return false;
 	}
 
