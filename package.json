@@ -1,9 +1,10 @@
 {
 	"name": "is-blob",
 	"version": "2.0.1",
-	"description": "Check if a value is a Blob",
+	"description": "Check if a value is a `Blob`",
 	"license": "MIT",
 	"repository": "sindresorhus/is-blob",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
