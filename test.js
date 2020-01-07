@@ -9,5 +9,6 @@ global.Blob = window.Blob;
 
 test('main', t => {
 	t.true(isBlob(new Blob()));
+	t.true(isBlob(new window.File([], 'foo.txt')));
 	t.false(isBlob(Buffer.alloc(1)));
 });
