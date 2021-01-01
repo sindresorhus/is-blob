@@ -1,4 +1,4 @@
-# is-blob [![Build Status](https://travis-ci.org/sindresorhus/is-blob.svg?branch=master)](https://travis-ci.org/sindresorhus/is-blob)
+# is-blob
 
 > Check if a value is a [`Blob`](https://developer.mozilla.org/en/docs/Web/API/Blob) - File-like object of immutable, raw data
 
