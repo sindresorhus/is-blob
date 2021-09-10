@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = value => {
+module.exports = function(value) {
 	if (typeof Blob === 'undefined') {
 		return false;
 	}
