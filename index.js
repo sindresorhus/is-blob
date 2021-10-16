@@ -1,9 +1,9 @@
-'use strict';
+const {toString} = Object.prototype;
 
-module.exports = value => {
+export default function isBlob(value) {
 	if (typeof Blob === 'undefined') {
 		return false;
 	}
 
-	return value instanceof Blob || Object.prototype.toString.call(value) === '[object Blob]';
-};
+	return value instanceof Blob || toString.call(value) === '[object Blob]';
+}

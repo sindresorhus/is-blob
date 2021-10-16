@@ -1,14 +1,16 @@
+import {Buffer} from 'node:buffer';
 import test from 'ava';
 import jsdom from 'jsdom';
-import isBlob from '.';
+import isBlob from './index.js';
 
 const dom = new jsdom.JSDOM();
-global.window = dom.window;
-global.document = dom.window.document;
-global.Blob = window.Blob;
+globalThis.window = dom.window;
+globalThis.document = dom.window.document;
+globalThis.Blob = window.Blob;
+globalThis.File = window.File;
 
 test('main', t => {
 	t.true(isBlob(new Blob()));
-	t.true(isBlob(new window.File([], 'foo.txt')));
+	t.true(isBlob(new File([], 'foo.txt')));
 	t.false(isBlob(Buffer.alloc(1)));
 });

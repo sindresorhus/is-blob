@@ -2,25 +2,20 @@
 
 > Check if a value is a [`Blob`](https://developer.mozilla.org/en/docs/Web/API/Blob) - File-like object of immutable, raw data
 
-*`Blob` is only available in the browser. In Node.js, it always returns `false`.*
-
-
 ## Install
 
+```sh
+npm install is-blob
 ```
-$ npm install is-blob
-```
-
 
 ## Usage
 
 ```js
-const isBlob = require('is-blob');
+import isBlob from 'is-blob';
 
 isBlob(new Blob(['<h1>Unicorns</h1>'], {type: 'text/html'}));
 //=> true
 ```
-
 
 ## Related
 
