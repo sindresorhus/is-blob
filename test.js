@@ -1,4 +1,3 @@
-import {Buffer} from 'node:buffer';
 import test from 'ava';
 import jsdom from 'jsdom';
 import isBlob from './index.js';
@@ -12,5 +11,5 @@ globalThis.File = window.File;
 test('main', t => {
 	t.true(isBlob(new Blob()));
 	t.true(isBlob(new File([], 'foo.txt')));
-	t.false(isBlob(Buffer.alloc(1)));
+	t.false(isBlob(new Uint8Array(1)));
 });
